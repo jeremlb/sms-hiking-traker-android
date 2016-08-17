@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="break_type">
+        <item></item>
+        <item>camp</item>
+        <item>break</item>
+        <item>eat</item>
+        <item>start</item>
+        <item>arrived</item>
+    </string-array>
+    <string-array name="weather">
+        <item></item>
+        <item>sunny</item>
+        <item>clear-night</item>
+        <item>cloudy</item>
+        <item>hazy</item>
+        <item>most-cloudy-day</item>
+        <item>most-cloudy-night</item>
+        <item>rain-snow</item>
+        <item>rainy</item>
+        <item>showcase</item>
+        <item>snowy</item>
+        <item>storm</item>
+        <item>thunder</item>
+        <item>unknown</item>
+        <item>windy</item>
+    </string-array>
+</resources>

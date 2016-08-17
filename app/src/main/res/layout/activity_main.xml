@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollview1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Location"
+            android:id="@+id/textView0"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="En attente de la position GPS..."
+            android:id="@+id/textViewLocation"
+            android:layout_gravity="top|bottom"
+            android:layout_below="@+id/textView0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Enter mobile number:"
+            android:id="@+id/textView1"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLocation"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp">
+        </TextView>
+        <EditText
+            android:id="@+id/etextMblNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true">
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Choose a break type:"
+            android:id="@+id/textView3"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etextMblNumber"
+            android:layout_marginTop="10dp">
+        </TextView>
+        <Spinner
+            android:id="@+id/break_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:minHeight="30dp"
+            android:longClickable="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Choose the weather:"
+            android:id="@+id/textView4"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/break_type">
+        </TextView>
+        <Spinner
+            android:id="@+id/weather"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:minHeight="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Enter message:"
+            android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather">
+        </TextView>
+        <EditText
+            android:id="@+id/etextMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:layout_below="@+id/textView2"
+            android:gravity="top">
+        </EditText>
+        <Button
+            android:id="@+id/btnSendSMS"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Send SMS"
+            android:layout_below="@+id/etextMsg"
+            android:layout_centerInParent="true">
+        </Button>
+    </RelativeLayout>
+</ScrollView>
